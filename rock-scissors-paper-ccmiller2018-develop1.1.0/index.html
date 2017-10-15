@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container"> <!-- whole website container -->
+      <div class="info-bar"> <!-- a bar for returning information from the game -->
+        <div class="score">Player Score</div>
+        <div id="playerScore" class="score">0</div>
+        <div class="score">Computer Score</div>
+        <div id="computerScore" class="score">0</div>
+      </div><!--  close the info bar -->
+      <div class="game-container"> <!-- outer box for the game -->
+        <div class="game-space"> <!-- where the player can play from -->
+          <div class="image-container">
+            <div id="rock" class="image"> <!-- for the rock image -->
+            <img src="rock.png" onclick="setPlayerMove('rock')"/>
+          </div><!-- close the rock image container -->
+          <div id="paper" class="image"> <!-- for the rock image -->
+              <img src="paper.png" onclick="setPlayerMove('paper')"/>
+          </div><!-- close the paperimage container -->
+          <div id="scissors" class="image"> <!-- for the rock image -->
+              <img src="scissors.png" onclick="setPlayerMove('scissors')"/>
+          </div><!-- close the scissors image container -->
+        </div> <!-- close images container -->
+        <button onclick="playGame()">Make My Move</button>
+        </div> <!-- close the game space -->
+        <div id="game-feedback-container"> <!-- column for the score, etc -->
+        </div>
+      </div><!-- close the game container -->
+    </div><!-- close whole site container -->
+    <script src="rps.js"></script>
+  </body>
+</html>
